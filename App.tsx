@@ -15,7 +15,7 @@ import LoginScreenPresenter from './presenters/LoginScreenPresenter';
 import { ChangeInUser } from './store/User/UserActions';
 import SignUpScreenPresenter from './presenters/SignUpScreenPresenter';
 const {Screen, Navigator} = createStackNavigator();
-
+import UserPage from "./views/UserPage";
 
 
 
@@ -33,6 +33,7 @@ const App =() =>{
          
         
       }}>
+        <Screen name='UserPage' component={UserPage} ></Screen>
         <Screen name="Home" component={startPagePresenter}></Screen>
         <Screen name="Login" component={LoginScreenPresenter}></Screen>
         <Screen name="Signup" component={SignUpScreenPresenter}></Screen>
